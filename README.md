@@ -44,37 +44,39 @@ Additionally, make sure that the following extensions are enabled in your PHP:
 
 - definições apache2 (p.e. /etc/apache2/sites-enabled/000-default.conf)
 
-   -<Directory "<server_dir>/tombola_digital/public">
-
+   -
+   <Directory "<server_dir>/tombola_digital/public">
        AllowOverride all
-
        Require all granted
-
-
     </Directory>
 
 
 
 - definições para ligação à base de dados em app/Config/Database.php
 
-    - ...
+    - 
+    <?php
+    ...
         'hostname' => 'localhost',
         'username' => 'dbuser',
         'password' => 'dbpass',
         'database' => 'tombola_digital',
 
     ...
+    ?>
 
 
 - definições para envio de emails (recuperação de conta, registo e ativação de conta)
 
     - app/Config/Email.php
+    <?php
 ...
     public $SMTPHost = "smtp.host.pt";
     public $SMTPUser = "email@camara.pt";
     public $SMTPPass = "password";
     public $SMTPPort = 587;
 ...
+?>
 
     - definir email "from" para estes emails
 
