@@ -241,7 +241,7 @@
 <script src="<?php echo base_url("plugins/bootstrap-switch/bootstrap-switch.min.js"); ?>"></script>
 <link href="<?php echo base_url("plugins/bootstrap-switch/bootstrap-switch.css"); ?>" rel="stylesheet">
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBabg8CTeyIlzoVFvSwsu8U6gNg2WgVq1U&callback=initMap&v=weekly" defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=<maps-api-key>&callback=initMap&v=weekly" defer></script>
 <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
 
 <script>
