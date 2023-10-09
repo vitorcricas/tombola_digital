@@ -1,0 +1,4 @@
+https://punchsalad.com/ssl-certificate-generator/
+
+openssl pkcs12 -export -out tombola.cm-mealhada.pt.pfx -inkey tombola-private-key.key -in tombola-ca-bundle.crt 
+ 
