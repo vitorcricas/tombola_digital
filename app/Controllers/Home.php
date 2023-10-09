@@ -288,7 +288,7 @@ ComerciantesModel);
 
         $this->request = \Config\Services::request();
         //echo $request->getVar('nome');
-        $recaptcha_secret_key = "6Ld_mfMiAAAAAFLpf_OU9CQrytyNcy9l9lnX1DmX";
+        $recaptcha_secret_key = "<recaptcha_secret_key>";
 
         if (isset($_POST['g-recaptcha-response'])) {
 
