@@ -88,16 +88,16 @@ class Auth extends \CodeIgniter\Controller
         //google client code
         //google oauth2
         $this->googleClient = new \Google\Client();
-        $this->googleClient->setClientId("904390597522-havn0pkfd78ekuo61jqu0mklb9a8d05v.apps.googleusercontent.com");
-        $this->googleClient->setClientSecret("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");
+        $this->googleClient->setClientId("<client-id>.apps.googleusercontent.com");
+        $this->googleClient->setClientSecret("<client-secret>");
         $this->googleClient->setRedirectUri(base_url('auth/login_google'));
         // I will only need email, since that is all I want Google to ascertain
         $this->googleClient->addScope("email");
 
 
         $this->facebookClient = new \League\OAuth2\Client\Provider\Facebook([
-            'clientId'          => '675037440791897',
-            'clientSecret'      => 'b4ee2e7e25c027ca4d447620dcf3cb6a',
+            'clientId'          => '<client-id>',
+            'clientSecret'      => '<client-secret>',
             'redirectUri'       => base_url('auth/login_facebook'),
             'graphApiVersion'   => 'v15.0',
         ]);
