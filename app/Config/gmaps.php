@@ -4,6 +4,6 @@ namespace Config;
 
 class gmaps{
 
-    public $apikey = "<your_api_keu>";
+    public $apikey = "<your_api_key>";
 
 }
